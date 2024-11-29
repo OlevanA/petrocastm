@@ -1,22 +1,40 @@
 """
-This module provides utilities for loading and processing historical production data.
+Utility functions for data processing.
 
-Functions:
-    load_data(filepath): Loads production data from a CSV file.
+This module provides functions to load and preprocess historical production
+data from CSV files.
 """
+
 import pandas as pd
+import numpy as np
+
 
 def load_data(filepath):
     """
-    Load historical production data from CSV file.
+    Load historical production data from a CSV file.
 
     Parameters:
-        filepath (str): Path to CSV file.
+        filepath (str): Path to the CSV file.
 
     Returns:
         tuple: (years, production) as numpy arrays.
+
+    Raises:
+        ValueError: If an error occurs while reading or processing the file.
     """
-    data = pd.read_csv(filepath)
-    years = data["Year"].to_numpy()
-    production = data["Production"].to_numpy()
-    return years, production
+    try:
+        data = pd.read_csv(filepath)
+
+        # Convert "Year" to numeric, forcing non-numeric values to NaN
+        data['Year'] = pd.to_numeric(data['Year'], errors='coerce')
+
+        # Drop rows where 'Year' or 'Production' have NaN values
+        data.dropna(subset=['Year', 'Production'], inplace=True)
+
+        years = data["Year"].to_numpy(dtype=np.float64)
+        production = data["Production"].to_numpy(dtype=np.float64)
+
+        return years, production
+
+    except Exception as e:
+        raise ValueError(f"Error processing file {filepath}: {e}") from e

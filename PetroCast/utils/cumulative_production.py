@@ -31,7 +31,7 @@ def calculate_cumulative_production(years, production, model_params, model_func)
     # Generate future years starting from the last historical year
     future_years = np.arange(years[-1] + 1, 2101)
 
-    # We need to unpack the model parameters before passing them to the model function.
+    # Unpack the model parameters before passing them to the model function.
     projected_production = model_func(future_years, *model_params.values())
 
     # Calculate cumulative production

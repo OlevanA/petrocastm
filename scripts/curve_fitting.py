@@ -28,10 +28,10 @@ def fit_hubbert_curve(years, production, ultimate_recoverable_resources):
         raise TypeError("Parameter 'years' must be an array or list.")
     if not isinstance(production, (np.ndarray, list)):
         raise TypeError("Parameter 'production' must be an array or list.")
-    if not all(isinstance(val, (int, float)) for val in production):
-        raise ValueError("Parameter 'production' must contain only numeric values.")
-    if not all(isinstance(val, (int, float)) for val in years):
+    if not np.issubdtype(np.array(years).dtype, np.number):
         raise ValueError("Parameter 'years' must contain only numeric values.")
+    if not np.issubdtype(np.array(production).dtype, np.number):
+        raise ValueError("Parameter 'production' must contain only numeric values.")
 
     def hubbert_function(t, steepness, peak_time):
         return hubbert_curve(t, ultimate_recoverable_resources, steepness, peak_time)
@@ -63,14 +63,13 @@ def fit_laherrere_model(years, production, ultimate_recoverable_resources):
         raise TypeError("Parameter 'years' must be an array or list.")
     if not isinstance(production, (np.ndarray, list)):
         raise TypeError("Parameter 'production' must be an array or list.")
-    if not all(isinstance(val, (int, float)) for val in production):
-        raise ValueError("Parameter 'production' must contain only numeric values.")
-    if not all(isinstance(val, (int, float)) for val in years):
+    if not np.issubdtype(np.array(years).dtype, np.number):
         raise ValueError("Parameter 'years' must contain only numeric values.")
+    if not np.issubdtype(np.array(production).dtype, np.number):
+        raise ValueError("Parameter 'production' must contain only numeric values.")
 
     def laherrere_function(t, peak_production, peak_time, width):
-        return laherrere_bell_curve(t, peak_production, peak_time,
-                                    width, ultimate_recoverable_resources)
+        return laherrere_bell_curve(t, peak_production, peak_time, width, ultimate_recoverable_resources)
 
     # Initial guess for parameters
     initial_guess = [max(production), 2040, 200]  # Assume a peak in 2040 with a reasonable width

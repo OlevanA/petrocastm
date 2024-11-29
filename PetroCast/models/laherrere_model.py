@@ -14,7 +14,7 @@ def laherrere_bell_curve(
     commonly used for modeling resource extraction dynamics.
 
     Parameters:
-    - t (np.ndarray or float): Time (array or scalar).
+    - t (np.ndarray or float): Time (array or scalar).pylint
     - peak_production (float): Peak production rate (EJ/year).
     - tm (float): Time of peak production (year).
     - c (float): Width parameter controlling steepness.
