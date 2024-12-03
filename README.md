@@ -42,6 +42,6 @@ Clone the repository and install the dependencies:
 
 git clone https://github.com/OlevanA/PetroCast.git
 cd PetroCast
-pip install - r requirements.txt
+pip install -r requirements.txt
 
 ---------------------------------------------------------------------------------------------------------------------

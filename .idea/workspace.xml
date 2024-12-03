@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PetroCast.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/data1_oil_his_havard.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/data2_oil_his_BP.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_calculate_cumulative_production.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_curve_fitting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_data_processing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_hubbert_curve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_visualization.py" afterDir="false" />
+    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Second clean attempt.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "OlevanA"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/OlevanA/PetroCast.git",
+    "accountId": "f2b5bf05-e9ef-47cc-8b32-adcb0601ddf3"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -56,13 +57,15 @@
     "Python tests.Python tests in test_laherrere_model.py.executor": "Run",
     "Python tests.Python tests in test_visualization.py.executor": "Run",
     "Python.curve_fitting.executor": "Run",
+    "Python.data_processing.executor": "Run",
     "Python.hubbert_curve_model.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.setup.executor": "Run",
     "Python.test.executor": "Run",
     "Python.visualization.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PetroCast/tests",
+    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PetroCast/scripts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,10 +76,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleva\PycharmProjects\PetroCast\scripts" />
+      <recent name="C:\Users\oleva\PycharmProjects\PetroCast" />
       <recent name="C:\Users\oleva\PycharmProjects\PetroCast\tests" />
       <recent name="C:\Users\oleva\PycharmProjects\PetroCast\data\raw" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oleva\PycharmProjects\PetroCast\scripts" />
       <recent name="C:\Users\oleva\PycharmProjects\PetroCast\examples" />
     </key>
   </component>
@@ -121,19 +127,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732739183050</updated>
-      <workItem from="1732739187197" duration="13298000" />
+      <workItem from="1732739187197" duration="35148000" />
     </task>
+    <task id="LOCAL-00001" summary="First clean attempt.">
+      <option name="closed" value="true" />
+      <created>1732792520772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732792520772</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First clean attempt.">
+      <option name="closed" value="true" />
+      <created>1732792698461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732792698461</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Second clean attempt.">
+      <option name="closed" value="true" />
+      <created>1732879926253</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732879926253</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First clean attempt." />
+    <MESSAGE value="Second clean attempt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second clean attempt." />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PetroCast$hubbert_curve_model.coverage" NAME="hubbert_curve_model Coverage Results" MODIFIED="1732742178837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/models" />
-    <SUITE FILE_PATH="coverage/PetroCast$curve_fitting.coverage" NAME="curve_fitting Coverage Results" MODIFIED="1732786819285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
+    <SUITE FILE_PATH="coverage/PetroCast$curve_fitting.coverage" NAME="curve_fitting Coverage Results" MODIFIED="1732878972836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
     <SUITE FILE_PATH="coverage/PetroCast$test.coverage" NAME="test Coverage Results" MODIFIED="1732742864834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/PetroCast$visualization.coverage" NAME="visualization Coverage Results" MODIFIED="1732787687134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast" />
-    <SUITE FILE_PATH="coverage/PetroCast$main.coverage" NAME="main Coverage Results" MODIFIED="1732787614741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast" />
-    <SUITE FILE_PATH="coverage/PetroCast$.coverage" NAME=" Coverage Results" MODIFIED="1732791295358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/PetroCast$main.coverage" NAME="main Coverage Results" MODIFIED="1732881531276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast" />
+    <SUITE FILE_PATH="coverage/PetroCast$setup.coverage" NAME="setup Coverage Results" MODIFIED="1733227378451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PetroCast$data_processing.coverage" NAME="data_processing Coverage Results" MODIFIED="1732879275381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
+    <SUITE FILE_PATH="coverage/PetroCast$.coverage" NAME=" Coverage Results" MODIFIED="1732879850684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
