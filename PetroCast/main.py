@@ -12,6 +12,7 @@ from PetroCast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
 from PetroCast.utils.cumulative_production import calculate_cumulative_production
 from PetroCast.models.hubbert_curve_model import hubbert_curve
 from PetroCast.models.laherrere_model import laherrere_bell_curve
+from data.output.Oil_estimate import saved_output
 
 
 def main():
@@ -27,7 +28,7 @@ def main():
     years, production = load_data(filepath)
 
     # Define Ultimate Recoverable Resources (URR)
-    urr = 25000  # Adjust URR based on updated estimates
+    urr = saved_output  # Adjust URR based on updated estimates
 
     # Fit Laherrère and Hubbert models
     laherrere_params = fit_laherrere_model(years, production, urr)
