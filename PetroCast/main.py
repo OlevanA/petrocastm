@@ -4,7 +4,7 @@ Main module for the PetroCast application.
 This script loads data, fits models, calculates cumulative production,
 and visualizes results for resource analysis.
 """
-
+from pathlib import Path
 import numpy as np
 from visualization import plot_results
 from utils.data_processing import load_data
@@ -22,9 +22,7 @@ def main():
     Loads data, fits Laherrère and Hubbert models, calculates cumulative production,
     and visualizes the results.
     """
-    filepath = (
-        r"C:\Users\oleva\PycharmProjects\PetroCast\data\raw\data1_oil_his_havard.csv"
-    )
+    filepath = Path("data/raw/data1_oil_his_havard.csv")
     years, production = load_data(filepath)
 
     # Define Ultimate Recoverable Resources (URR)
