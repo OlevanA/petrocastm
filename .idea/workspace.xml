@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Fours clean attempt.">
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PetroCast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PetroCast.iml" afterDir="false" />
+    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Fifth clean attempt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/New_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Python PDF.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/curve_fitting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/data_load.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/data_processing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/hubbert_curve_test_output.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test_hubbert_curve.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +144,7 @@
       <workItem from="1736350666466" duration="785000" />
       <workItem from="1736351467517" duration="2033000" />
       <workItem from="1736355999793" duration="6000" />
-      <workItem from="1736356069483" duration="515000" />
+      <workItem from="1736356069483" duration="1860000" />
     </task>
     <task id="LOCAL-00001" summary="First clean attempt.">
       <option name="closed" value="true" />
@@ -198,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733410243894</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fifth clean attempt.">
+      <option name="closed" value="true" />
+      <created>1736356619205</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736356619205</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +205,8 @@
     <MESSAGE value="Second clean attempt." />
     <MESSAGE value="Third clean attempt." />
     <MESSAGE value="Fours clean attempt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fours clean attempt." />
+    <MESSAGE value="Fifth clean attempt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth clean attempt." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
