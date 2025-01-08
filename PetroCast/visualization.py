@@ -5,8 +5,8 @@ using Laherrère and Hubbert curve models.
 
 import matplotlib.pyplot as plt
 import numpy as np
-from PetroCast.models.laherrere_model import laherrere_bell_curve
-from PetroCast.models.hubbert_curve_model import hubbert_curve
+from models.laherrere_model import laherrere_bell_curve
+from models.hubbert_curve_model import hubbert_curve
 
 
 def plot_results(data, laherrere_params, hubbert_params, urr):

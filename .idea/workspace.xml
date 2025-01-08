@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Second clean attempt.">
+    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Fours clean attempt.">
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PetroCast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PetroCast.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetroCast/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetroCast/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/New_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Python PDF.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/curve_fitting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/data_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/data_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/hubbert_curve_test_output.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test_hubbert_curve.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +34,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "OlevanA"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;OlevanA&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/OlevanA/PetroCast.git",
-    "accountId": "f2b5bf05-e9ef-47cc-8b32-adcb0601ddf3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/OlevanA/PetroCast.git&quot;,
+    &quot;accountId&quot;: &quot;f2b5bf05-e9ef-47cc-8b32-adcb0601ddf3&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pRqLpUNL8ceHEuaMUkN1zPFxSP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,7 +65,20 @@
     "Python tests.Python tests in test_hubbert_curve.py.executor": "Run",
     "Python tests.Python tests in test_laherrere_model.py.executor": "Run",
     "Python tests.Python tests in test_visualization.py.executor": "Run",
+    "Python.Building model.executor": "Run",
+    "Python.New_model.executor": "Run",
+    "Python.Oil_endowments_estimates.executor": "Run",
+    "Python.Oil_endowments_estimates_four.executor": "Run",
+    "Python.Oil_endowments_estimates_three.executor": "Run",
+    "Python.Oil_endowments_estimates_two.executor": "Run",
+    "Python.Oil_estimate.executor": "Run",
+    "Python.Oil_intensity.executor": "Run",
+    "Python.Oil_intesity and gdp.executor": "Run",
+    "Python.Oil_scarcity_analysis.executor": "Run",
+    "Python.Python PDF.executor": "Run",
+    "Python.Txt_file_scan.executor": "Run",
     "Python.curve_fitting.executor": "Run",
+    "Python.data_load.executor": "Run",
     "Python.data_processing.executor": "Run",
     "Python.hubbert_curve_model.executor": "Run",
     "Python.main.executor": "Run",
@@ -65,7 +87,7 @@
     "Python.visualization.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PetroCast/scripts",
+    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PetroCast",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,7 +149,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732739183050</updated>
-      <workItem from="1732739187197" duration="35148000" />
+      <workItem from="1732739187197" duration="59189000" />
+      <workItem from="1733412745503" duration="1503000" />
+      <workItem from="1733582740594" duration="5178000" />
+      <workItem from="1733750071908" duration="8477000" />
+      <workItem from="1736350666466" duration="785000" />
+      <workItem from="1736351467517" duration="2033000" />
+      <workItem from="1736355999793" duration="6000" />
+      <workItem from="1736356069483" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="First clean attempt.">
       <option name="closed" value="true" />
@@ -153,7 +182,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732879926253</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Third clean attempt.">
+      <option name="closed" value="true" />
+      <created>1733227801148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733227801148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fours clean attempt.">
+      <option name="closed" value="true" />
+      <created>1733410243894</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733410243894</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,16 +207,43 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First clean attempt." />
     <MESSAGE value="Second clean attempt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Second clean attempt." />
+    <MESSAGE value="Third clean attempt." />
+    <MESSAGE value="Fours clean attempt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fours clean attempt." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data/output/Oil_estimate.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PetroCast$hubbert_curve_model.coverage" NAME="hubbert_curve_model Coverage Results" MODIFIED="1732742178837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/models" />
     <SUITE FILE_PATH="coverage/PetroCast$curve_fitting.coverage" NAME="curve_fitting Coverage Results" MODIFIED="1732878972836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
-    <SUITE FILE_PATH="coverage/PetroCast$test.coverage" NAME="test Coverage Results" MODIFIED="1732742864834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/PetroCast$visualization.coverage" NAME="visualization Coverage Results" MODIFIED="1732787687134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast" />
-    <SUITE FILE_PATH="coverage/PetroCast$main.coverage" NAME="main Coverage Results" MODIFIED="1732881531276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast" />
     <SUITE FILE_PATH="coverage/PetroCast$setup.coverage" NAME="setup Coverage Results" MODIFIED="1733227378451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PetroCast$data_processing.coverage" NAME="data_processing Coverage Results" MODIFIED="1732879275381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
+    <SUITE FILE_PATH="coverage/PetroCast$data_load.coverage" NAME="data_load Coverage Results" MODIFIED="1733311021541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_intensity.coverage" NAME="Oil_intensity Coverage Results" MODIFIED="1734017329896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$Building_model.coverage" NAME="Building model Coverage Results" MODIFIED="1733587689614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PetroCast$.coverage" NAME=" Coverage Results" MODIFIED="1732879850684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_endowments_estimates_four.coverage" NAME="Oil_endowments_estimates_four Coverage Results" MODIFIED="1733305049982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/processed" />
+    <SUITE FILE_PATH="coverage/PetroCast$Python_PDF.coverage" NAME="Python PDF Coverage Results" MODIFIED="1733330690038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$hubbert_curve_model.coverage" NAME="hubbert_curve_model Coverage Results" MODIFIED="1732742178837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/models" />
+    <SUITE FILE_PATH="coverage/PetroCast$test.coverage" NAME="test Coverage Results" MODIFIED="1732742864834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_endowments_estimates_three.coverage" NAME="Oil_endowments_estimates_three Coverage Results" MODIFIED="1733301593286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/processed" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_intesity_and_gdp.coverage" NAME="Oil_intesity and gdp Coverage Results" MODIFIED="1734018438954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_scarcity_analysis.coverage" NAME="Oil_scarcity_analysis Coverage Results" MODIFIED="1734018571777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$main.coverage" NAME="main Coverage Results" MODIFIED="1736351344834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PetroCast$data_processing.coverage" NAME="data_processing Coverage Results" MODIFIED="1732879275381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_endowments_estimates.coverage" NAME="Oil_endowments_estimates Coverage Results" MODIFIED="1733229907257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/processed" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1736355684369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PetroCast$New_model.coverage" NAME="New_model Coverage Results" MODIFIED="1733318743524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_estimate.coverage" NAME="Oil_estimate Coverage Results" MODIFIED="1733304564584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/output" />
+    <SUITE FILE_PATH="coverage/PetroCast$Txt_file_scan.coverage" NAME="Txt_file_scan Coverage Results" MODIFIED="1733750183284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$Oil_endowments_estimates_two.coverage" NAME="Oil_endowments_estimates_two Coverage Results" MODIFIED="1733230281243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/processed" />
   </component>
 </project>
