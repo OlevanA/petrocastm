@@ -44,4 +44,6 @@ git clone https://github.com/OlevanA/PetroCast.git
 cd PetroCast
 pip install -r requirements.txt
 
+Run the code as a module
+python -m PetroCast
 ---------------------------------------------------------------------------------------------------------------------

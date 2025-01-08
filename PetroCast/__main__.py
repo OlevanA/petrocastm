@@ -6,12 +6,12 @@ and visualizes results for resource analysis.
 """
 from pathlib import Path
 import numpy as np
-from visualization import plot_results
-from utils.data_processing import load_data
-from utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
-from utils.cumulative_production import calculate_cumulative_production
-from models.hubbert_curve_model import hubbert_curve
-from models.laherrere_model import laherrere_bell_curve
+from PetroCast.visualization import plot_results
+from PetroCast.utils.data_processing import load_data
+from PetroCast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
+from PetroCast.utils.cumulative_production import calculate_cumulative_production
+from PetroCast.models.hubbert_curve_model import hubbert_curve
+from PetroCast.models.laherrere_model import laherrere_bell_curve
 from data.output.Oil_estimate import saved_output
 
 

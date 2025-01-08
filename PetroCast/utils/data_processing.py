@@ -14,7 +14,7 @@ def load_data(filepath):
     Load historical production data from a CSV file.
 
     Parameters:
-        filepath (str): Path to the CSV file.
+        filepath (Path): Path to the CSV file.
 
     Returns:
         tuple: (years, production) as numpy arrays.
