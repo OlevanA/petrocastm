@@ -52,8 +52,8 @@ def plot_results(data, laherrere_params, hubbert_params, urr):
                 label="Hubbert Peak Year")
 
     plt.xlabel("Year")
-    plt.ylabel("Production (EJ/year or similar)")
+    plt.ylabel(f"Production (EJ/year or similar)")
     plt.title("Production and Model Fits (Full Curve)")
     plt.legend()
     plt.grid()
-    plt.show()
+    plt.show(block=False)

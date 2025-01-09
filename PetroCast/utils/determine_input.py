@@ -90,4 +90,4 @@ def determine_input():
             #     output_df.to_csv(csv_file_path, index=False)
             #     print(f"Output saved to {csv_file_path}")
 
-    return saved_output
+    return saved_output, unit
