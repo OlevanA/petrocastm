@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Fifth clean attempt.">
-      <change beforePath="$PROJECT_DIR$/.idea/PetroCast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PetroCast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PetroCast/utils/determine_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/utils/determine_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/OlevanA/PetroCast",
+    "url": "https://github.com/OlevanA/PetroCast.git",
     "accountId": "f2b5bf05-e9ef-47cc-8b32-adcb0601ddf3"
   }
 }]]></component>
@@ -80,7 +76,7 @@
     "Python.visualization.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PECA",
+    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PEC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,6 +148,7 @@
       <workItem from="1736355999793" duration="6000" />
       <workItem from="1736356069483" duration="1860000" />
       <workItem from="1736360217229" duration="8677000" />
+      <workItem from="1737109891466" duration="2485000" />
     </task>
     <task id="LOCAL-00001" summary="First clean attempt.">
       <option name="closed" value="true" />

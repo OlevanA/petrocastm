@@ -1,10 +1,11 @@
+from pathlib import Path
 import pandas as pd
 import json
 
 from data.output.Oil_estimate import saved_output
 
 # Load the CSV file into a DataFrame
-file_path = r'C:\Users\oleva\PycharmProjects\PetroCast\data\raw\sorted_oil_endowments_with_estimations.csv'
+file_path = Path('data/raw/sorted_oil_endowments_with_estimations.csv')
 df = pd.read_csv(file_path)
 
 # Function to get the value for a specific estimate and unit
@@ -50,7 +51,7 @@ def determine_input():
     estimate_name = input("Enter the estimate name (e.g., 'Estimate 1'): ").strip()
 
     # User selects a unit
-    unit = input("Enter the unit you want ('Gb' (gigabarrels) or 'EJ' (exajoules)): ").strip()
+    unit = ('EJ')
 
     # Get the value for the selected estimate and unit
     if estimate_name[0:8] == "Estimate":
