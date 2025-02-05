@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Fifth clean attempt.">
+    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Changed Absolute to Relative Paths with pathlib">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/utils/determine_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/utils/determine_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetroCast/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/__main__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +29,12 @@
     &quot;assignee&quot;: &quot;OlevanA&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/OlevanA/PetroCast.git",
-    "accountId": "f2b5bf05-e9ef-47cc-8b32-adcb0601ddf3"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/OlevanA/PetroCast.git&quot;,
+    &quot;accountId&quot;: &quot;f2b5bf05-e9ef-47cc-8b32-adcb0601ddf3&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -44,47 +44,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in Test_main.py.executor": "Run",
-    "Python tests.Python tests in test.py.executor": "Run",
-    "Python tests.Python tests in test_calculate_cumulative_production.py.executor": "Run",
-    "Python tests.Python tests in test_curve_fitting.py.executor": "Run",
-    "Python tests.Python tests in test_data_processing.py.executor": "Run",
-    "Python tests.Python tests in test_hubbert_curve.py.executor": "Run",
-    "Python tests.Python tests in test_laherrere_model.py.executor": "Run",
-    "Python tests.Python tests in test_visualization.py.executor": "Run",
-    "Python.Building model.executor": "Run",
-    "Python.New_model.executor": "Run",
-    "Python.Oil_endowments_estimates.executor": "Run",
-    "Python.Oil_endowments_estimates_four.executor": "Run",
-    "Python.Oil_endowments_estimates_three.executor": "Run",
-    "Python.Oil_endowments_estimates_two.executor": "Run",
-    "Python.Oil_estimate.executor": "Run",
-    "Python.Oil_intensity.executor": "Run",
-    "Python.Oil_intesity and gdp.executor": "Run",
-    "Python.Oil_scarcity_analysis.executor": "Run",
-    "Python.Python PDF.executor": "Run",
-    "Python.Txt_file_scan.executor": "Run",
-    "Python.curve_fitting.executor": "Run",
-    "Python.data_load.executor": "Run",
-    "Python.data_processing.executor": "Run",
-    "Python.hubbert_curve_model.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.setup.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.visualization.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oleva/PycharmProjects/PEC",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in Test_main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_calculate_cumulative_production.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_curve_fitting.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_data_processing.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_hubbert_curve.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_laherrere_model.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_visualization.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Building model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.New_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_endowments_estimates.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_endowments_estimates_four.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_endowments_estimates_three.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_endowments_estimates_two.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_estimate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_intensity.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_intesity and gdp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Oil_scarcity_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Python PDF.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Txt_file_scan.executor&quot;: &quot;Run&quot;,
+    &quot;Python.curve_fitting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_load.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hubbert_curve_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualization.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleva/PycharmProjects/PEC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\oleva\PycharmProjects\PECA" />
@@ -148,7 +148,8 @@
       <workItem from="1736355999793" duration="6000" />
       <workItem from="1736356069483" duration="1860000" />
       <workItem from="1736360217229" duration="8677000" />
-      <workItem from="1737109891466" duration="2485000" />
+      <workItem from="1737109891466" duration="9934000" />
+      <workItem from="1738700359802" duration="3267000" />
     </task>
     <task id="LOCAL-00001" summary="First clean attempt.">
       <option name="closed" value="true" />
@@ -198,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736356619205</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed Absolute to Relative Paths with pathlib">
+      <option name="closed" value="true" />
+      <created>1737113243538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737113243538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +230,8 @@
     <MESSAGE value="Third clean attempt." />
     <MESSAGE value="Fours clean attempt." />
     <MESSAGE value="Fifth clean attempt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fifth clean attempt." />
+    <MESSAGE value="Changed Absolute to Relative Paths with pathlib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Absolute to Relative Paths with pathlib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
