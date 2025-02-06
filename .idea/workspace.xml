@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="Output is more readable in terminal">
+    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="many small changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PetroCast/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetroCast/utils/determine_input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output/Oil_estimate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Fix_endowments_two.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates_four.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates_three.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates_two.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_estimate.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_estimate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/Oil_estimate_sorted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/processed/Oil_estimate_sorted.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/fix_endowments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/Check file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/data1_oil_his_havard.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/raw/data1_oil_his_havard.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/data2_oil_his_BP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/raw/data2_oil_his_BP.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/sorted_oil_endowments_with_estimations.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/raw/sorted_oil_endowments_with_estimations.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +86,7 @@
     "Python.Oil_scarcity_analysis.executor": "Run",
     "Python.Python PDF.executor": "Run",
     "Python.Txt_file_scan.executor": "Run",
+    "Python.create csv.executor": "Run",
     "Python.curve_fitting.executor": "Run",
     "Python.data_load.executor": "Run",
     "Python.data_processing.executor": "Run",
@@ -105,11 +117,11 @@
       <recent name="C:\Users\oleva\PycharmProjects\PetroCast\data\raw" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oleva\PycharmProjects\MODPET\examples\processed" />
+      <recent name="C:\Users\oleva\PycharmProjects\MODPET\examples\raw" />
       <recent name="C:\Users\oleva\PycharmProjects\MODPET\" />
       <recent name="C:\Users\oleva\PycharmProjects\MODPET" />
       <recent name="C:\Users\oleva\PycharmProjects\MODPET\PetroCast" />
-      <recent name="C:\Users\oleva\PycharmProjects\PetroCast\scripts" />
-      <recent name="C:\Users\oleva\PycharmProjects\PetroCast\examples" />
     </key>
   </component>
   <component name="RunManager">
@@ -166,7 +178,7 @@
       <workItem from="1738700359802" duration="21752000" />
       <workItem from="1738843141570" duration="4912000" />
       <workItem from="1738854358729" duration="86000" />
-      <workItem from="1738855093279" duration="2766000" />
+      <workItem from="1738855093279" duration="7952000" />
     </task>
     <task id="LOCAL-00001" summary="First clean attempt.">
       <option name="closed" value="true" />
@@ -232,7 +244,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738743596913</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="many small changes">
+      <option name="closed" value="true" />
+      <created>1738863702858</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738863702858</updated>
+    </task>
+    <task id="LOCAL-00010" summary="many small changes">
+      <option name="closed" value="true" />
+      <created>1738863829779</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738863829779</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,24 +285,15 @@
     <MESSAGE value="Fifth clean attempt." />
     <MESSAGE value="Changed Absolute to Relative Paths with pathlib" />
     <MESSAGE value="Output is more readable in terminal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Output is more readable in terminal" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data/output/Oil_estimate.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="many small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="many small changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PetroCast$curve_fitting.coverage" NAME="curve_fitting Coverage Results" MODIFIED="1732878972836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PetroCast/utils" />
+    <SUITE FILE_PATH="coverage/main_py$create_csv.coverage" NAME="create csv Coverage Results" MODIFIED="1738868124469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/raw" />
     <SUITE FILE_PATH="coverage/PetroCast$setup.coverage" NAME="setup Coverage Results" MODIFIED="1733227378451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PetroCast$data_load.coverage" NAME="data_load Coverage Results" MODIFIED="1733311021541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PetroCast$Oil_intensity.coverage" NAME="Oil_intensity Coverage Results" MODIFIED="1734017329896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PetroCast$data_load.coverage" NAME="data_load Coverage Results" MODIFIED="1733311021541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PetroCast$.coverage" NAME=" Coverage Results" MODIFIED="1732879850684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/main_py$Fix_endowments_.coverage" NAME="Fix_endowments  Coverage Results" MODIFIED="1738753742959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/processed" />
     <SUITE FILE_PATH="coverage/PetroCast$Oil_endowments_estimates_four.coverage" NAME="Oil_endowments_estimates_four Coverage Results" MODIFIED="1733305049982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/processed" />
