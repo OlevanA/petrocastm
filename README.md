@@ -1,4 +1,4 @@
-#PetroCast: A Scientific Tool for Oil and Resource Modeling and Forecasting
+# PetroCast: A Scientific Tool for Oil and Resource Modeling and Forecasting
 
 PetroCast is a Python-based scientific modeling package designed to compare the accuracy 
 and forecasting power of different resource extraction models used by the scientific community, 
@@ -9,7 +9,7 @@ such as a common Ultimate Recoverable Resource (URR) value.
 In future versions, additional models and resource types (e.g., natural gas, coal, copper etc...) 
 will be added, making PetroCast a versatile tool for resource modeling and forecasting.
 ---------------------------------------------------------------------------------------------------------------------
- ### **Overview**:
+## **Overview**:
 ---------------------------------------------------------------------------------------------------------------------
     Current Models Included 
         Hubbert Model: Symmetric production curve for peak oil analysis.
@@ -25,7 +25,7 @@ will be added, making PetroCast a versatile tool for resource modeling and forec
     Extensibility:
         Easily integrate additional models or resources in future iterations.
 ---------------------------------------------------------------------------------------------------------------------
-### **Installation**:
+## **Installation**:
 ---------------------------------------------------------------------------------------------------------------------
 ### **Prerequisites**
 ---------------------------------------------------------------------------------------------------------------------
