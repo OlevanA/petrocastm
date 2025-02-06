@@ -16,6 +16,9 @@ def plot_results(data, laherre_full, hubbert_full, output_pth):
         hubbert_data (np.ndarray)
         output_pth (Path): Path to the directory where the plot will be saved.
     """
+    if not output_pth.exists():
+        output_pth.mkdir()
+
     years = data['years']
     production = data['production']
     future_years = data['future_years']
