@@ -2,4 +2,5 @@
 
 dataset= "data/raw/data1_oil_his_havard.csv"  # Ensure this file exists and follows expected formatting
 urr_file= "data/processed/Oil_estimate_sorted.csv"  # Verify that this file contains a 'value' column for URR extraction
+output_pth = "data/output/"
 unit= "EJ"  # Unit of measurement, options: "EJ" or "Gb" - Consider validating this input in the main script
