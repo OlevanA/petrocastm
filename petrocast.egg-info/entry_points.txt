@@ -1,2 +1,0 @@
-[console_scripts]
-petrocast = PetroCast.__main__:main
