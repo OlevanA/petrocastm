@@ -16,7 +16,7 @@ dependencies = [
     "matplotlib",
     "scipy",
     "pyyaml",  # Remove if switching to toml
-    "tomli; python_version<'3.11'" # Only needed for Python <3.11
+    "tomli" # Only needed for Python <3.11
 ]
 
 [project.scripts]

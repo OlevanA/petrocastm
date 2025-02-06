@@ -11,6 +11,7 @@ import pandas as pd
 from PetroCast.utils.data_processing import load_data
 from PetroCast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
 from PetroCast.utils.cumulative_production import calculate_cumulative_production
+from PetroCast.utils.calculate_future_prod import calculate_future_production
 from PetroCast.models.hubbert_curve_model import hubbert_curve
 from PetroCast.models.laherrere_model import laherrere_bell_curve
 from PetroCast.visualization import plot_results
@@ -23,6 +24,7 @@ def run_petrocast(config_path, urr_key):
 
     dataset_path = Path(config["dataset"])
     urr_file = Path(config["urr_file"])
+    output_pth = Path(config["output_pth"])
     unit = config.get("unit", "EJ")
 
     # Load dataset
@@ -55,8 +57,22 @@ def run_petrocast(config_path, urr_key):
 
     print(f"Hubbert Cumulative: {hubbert_cumulative:.2f} {unit}")
     print(f"Laherrère Cumulative: {laherrere_cumulative:.2f} {unit}")
+    
+    # Generate full fit
+    future_years = np.arange(years[0], 2101)
+    data = {
+        "years": years, 
+        "production": production, 
+        "future_years": future_years, 
+        "tm":int(laherrere_params['tm']), 
+        "peak_time":int(hubbert_params['peak_time'])
+        }
+    laherre_fit_full, hubbert_fit_full = calculate_future_production(
+        data = data, 
+        laherrere_params=laherrere_params, 
+        hubbert_params=hubbert_params, 
+        urr=urr
+        )
 
     # Generate plots
-    future_years = np.arange(years[0], 2101)
-    data = {"years": years, "production": production, "future_years": future_years}
-    plot_results(data, laherrere_params, hubbert_params, urr)
+    plot_results(data = data, laherre_full = laherre_fit_full, hubbert_full = hubbert_fit_full, output_pth=output_pth)
