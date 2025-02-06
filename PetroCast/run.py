@@ -23,6 +23,7 @@ def run_petrocast(config_path, urr_key):
 
     dataset_path = Path(config["dataset"])
     urr_file = Path(config["urr_file"])
+    output_pth = Path(config["output_pth"])
     unit = config.get("unit", "EJ")
 
     # Load dataset
@@ -59,4 +60,4 @@ def run_petrocast(config_path, urr_key):
     # Generate plots
     future_years = np.arange(years[0], 2101)
     data = {"years": years, "production": production, "future_years": future_years}
-    plot_results(data, laherrere_params, hubbert_params, urr)
+    plot_results(data=data, laherrere_params=laherrere_params, hubbert_params=hubbert_params, urr=urr, output_pth=output_pth)

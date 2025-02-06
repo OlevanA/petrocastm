@@ -9,7 +9,7 @@ from PetroCast.models.laherrere_model import laherrere_bell_curve
 from PetroCast.models.hubbert_curve_model import hubbert_curve
 
 
-def plot_results(data, laherrere_params, hubbert_params, urr):
+def plot_results(data, laherrere_params, hubbert_params, urr, output_pth):
     """
     Plots historical production data along with Laherrère and Hubbert model fits.
 
@@ -23,7 +23,7 @@ def plot_results(data, laherrere_params, hubbert_params, urr):
     production = data['production']
     future_years = data['future_years']
 
-    plt.figure(figsize=(14, 7))
+    fig,ax = plt.subplots(figsize=(14, 7))
     full_years = np.arange(years[0], future_years[-1] + 1)
 
     # Extract the parameters expected by laherrere_bell_curve
@@ -57,3 +57,5 @@ def plot_results(data, laherrere_params, hubbert_params, urr):
     plt.legend()
     plt.grid()
     plt.show(block=False)
+
+    fig.savefig(output_pth / "results.png")
