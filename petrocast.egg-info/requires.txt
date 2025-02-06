@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+scipy
+pyyaml
+
+[:python_version < "3.11"]
+tomli

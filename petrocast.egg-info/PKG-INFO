@@ -1,0 +1,85 @@
+Metadata-Version: 2.2
+Name: petrocast
+Version: 0.1.0
+Summary: A Python package for modeling resource extraction using the Hubbert and Laherrère models.
+Author-email: Ole Van Allen <your-email@example.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) <2024> Ole van Allen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Requires-Dist: tomli; python_version < "3.11"
+
+#PetroCast: A Scientific Tool for Oil Resource Modeling and Forecasting
+
+PetroCast is a Python-based scientific modeling package designed to compare the accuracy 
+and forecasting power of different resource extraction models used by the scientific community, 
+with an initial focus on oil production. This tool helps researchers analyze historical trends, 
+predict future extraction rates, and evaluate model performance under shared assumptions, 
+such as a common Ultimate Recoverable Resource (URR) value.
+
+In future versions, additional models and resource types (e.g., natural gas, coal, copper etc...) 
+will be added, making PetroCast a versatile tool for resource modeling and forecasting.
+------------------------------------------------------------------------------------------------------------------
+Key Features: 
+
+    Current Models Included 
+        Hubbert Model: Symmetric production curve for peak oil analysis.
+        Laherrère Model: Flexible asymmetric production curve, tailored for resource extraction modeling.
+    Comparative Analysis: 
+        Compare model accuracy for historical data.
+        Evaluate model predictions for future production under identical URR assumptions.
+    Cumulative Production Analysis:
+        Calculate cumulative production based on historical data and model forecasts.
+        Convert production units (e.g., from Exajoules to Giga barrels).
+    Visualization:
+        Generate clear, annotated plots showing historical data, model fits, and future projections.
+    Extensibility:
+        Easily integrate additional models or resources in future iterations.
+--------------------------------------------------------------------------------------------------------------------
+Installation:
+---------------------------------------------------------------------------------------------------------------------
+Prerequisites: 
+
+    Python >= 3.8
+    Required Python packages: 
+    numpy
+    matplotlib 
+    scipy
+    pylint
+
+Installation Instructions 
+
+Clone the repository and install the dependencies: 
+
+git clone https://github.com/OlevanA/PetroCast.git
+cd PetroCast
+pip install -r requirements.txt
+
+Run the code as a module
+python -m PetroCast
+---------------------------------------------------------------------------------------------------------------------
