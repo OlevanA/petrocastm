@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="many small changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/Oil_estimate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Fix_endowments_two.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates_four.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates_three.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_endowments_estimates_two.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_estimate.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_estimate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/Oil_estimate_sorted.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/processed/Oil_estimate_sorted.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/fix_endowments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/Check file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/data1_oil_his_havard.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/raw/data1_oil_his_havard.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/data2_oil_his_BP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/raw/data2_oil_his_BP.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw/sorted_oil_endowments_with_estimations.csv" beforeDir="false" afterPath="$PROJECT_DIR$/examples/raw/sorted_oil_endowments_with_estimations.csv" afterDir="false" />
-    </list>
+    <list default="true" id="7125cba3-5c83-432d-b016-f039b8dd49c2" name="Changes" comment="many small changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +160,7 @@
       <workItem from="1738700359802" duration="21752000" />
       <workItem from="1738843141570" duration="4912000" />
       <workItem from="1738854358729" duration="86000" />
-      <workItem from="1738855093279" duration="7952000" />
+      <workItem from="1738855093279" duration="8268000" />
     </task>
     <task id="LOCAL-00001" summary="First clean attempt.">
       <option name="closed" value="true" />
@@ -260,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738863829779</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="many small changes">
+      <option name="closed" value="true" />
+      <created>1738869203158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738869203158</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
