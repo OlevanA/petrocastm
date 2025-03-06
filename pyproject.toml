@@ -20,8 +20,8 @@ dependencies = [
 ]
 
 [project.scripts]
-petrocast = "PetroCast.__main__:main"
+petrocast = "petrocast.__main__:main"
 
 [tool.setuptools]
-packages = ["PetroCast", "PetroCast.utils", "PetroCast.models"]
+packages = ["petrocast", "petrocast.utils", "petrocast.models"]
 
