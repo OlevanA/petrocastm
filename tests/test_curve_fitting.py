@@ -85,7 +85,7 @@ class TestCurveFitting(unittest.TestCase):
             fit_laherrere_model(self.years, "invalid_production", self.urr)
 
         # Test non-numeric values in 'production'
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             fit_laherrere_model(self.years, ["invalid", 100], self.urr)
 
         # Test mismatched input lengths
