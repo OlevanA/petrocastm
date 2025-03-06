@@ -6,7 +6,7 @@ creates a plot and saves it as an image file.
 """
 
 import unittest
-from pathlib import Path  # ✅ Standard library import first
+from pathlib import Path
 import numpy as np
 from petrocast.visualization import plot_results
 
@@ -28,7 +28,7 @@ class TestPlotResults(unittest.TestCase):
         self.hubbert_full = np.array([2000, 2001, 2002, 2003, 2004, 2005])
 
         self.output_path = Path("test_output")
-        self.output_path.mkdir(exist_ok=True)  # ✅ Simplified directory creation
+        self.output_path.mkdir(exist_ok=True)
 
     def test_plot_creation(self):
         """Test that the `plot_results` function successfully generates a plot file."""
@@ -36,19 +36,19 @@ class TestPlotResults(unittest.TestCase):
             data=self.data,
             laherre_full=self.laherrere_full,
             hubbert_full=self.hubbert_full,
-            output_pth=self.output_path,  # ✅ Wrapped long line
+            output_pth=self.output_path,  #
         )
 
         # Check if the file was created
         output_file = self.output_path / "results.png"
         self.assertTrue(
             output_file.exists(), "Plot file was not created."
-        )  # ✅ Wrapped long assertion
+        )
 
         # Check if the file size is non-zero
         self.assertGreater(
             output_file.stat().st_size, 0, "Plot file is empty."
-        )  # ✅ Wrapped long assertion
+        )
 
     def tearDown(self):
         """Clean up generated test files after execution."""
@@ -63,5 +63,3 @@ class TestPlotResults(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-# ✅ Ensured a final newline
