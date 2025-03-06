@@ -6,7 +6,7 @@ by testing various scenarios with both valid and invalid inputs.
 
 import unittest
 import numpy as np
-from PetroCast.models.hubbert_curve_model import hubbert_curve
+from petrocast.models.hubbert_curve_model import hubbert_curve
 
 
 class TestHubbertCurve(unittest.TestCase):

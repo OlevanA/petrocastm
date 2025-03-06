@@ -5,7 +5,7 @@ This script initializes execution and delegates processing to `run.py`.
 """
 
 import argparse
-from PetroCast.run import run_petrocast
+from petrocast.run import run_petrocast
 
 
 def main():

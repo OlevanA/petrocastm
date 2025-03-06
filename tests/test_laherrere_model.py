@@ -4,7 +4,7 @@ Unit tests for the Laherrère bell curve model.
 
 import unittest
 import numpy as np
-from PetroCast.models.laherrere_model import laherrere_bell_curve
+from petrocast.models.laherrere_model import laherrere_bell_curve
 
 
 class TestLaherrereBellCurve(unittest.TestCase):

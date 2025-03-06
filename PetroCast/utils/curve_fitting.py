@@ -7,8 +7,8 @@ using the Laherrère and Hubbert models.
 
 import numpy as np
 from scipy.optimize import curve_fit
-from PetroCast.models.laherrere_model import laherrere_bell_curve
-from PetroCast.models.hubbert_curve_model import hubbert_curve
+from petrocast.models.laherrere_model import laherrere_bell_curve
+from petrocast.models.hubbert_curve_model import hubbert_curve
 
 
 def fit_hubbert_curve(years, production, ultimate_recoverable_resources):

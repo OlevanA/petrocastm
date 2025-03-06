@@ -9,9 +9,9 @@ function using a dummy data for predictions.
 
 import unittest
 import numpy as np
-from PetroCast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
-from PetroCast.models.hubbert_curve_model import hubbert_curve
-from PetroCast.models.laherrere_model import laherrere_bell_curve
+from petrocast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
+from petrocast.models.hubbert_curve_model import hubbert_curve
+from petrocast.models.laherrere_model import laherrere_bell_curve
 
 
 class TestCurveFitting(unittest.TestCase):

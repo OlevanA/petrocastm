@@ -1,9 +1,9 @@
 import unittest
 import numpy as np
 from pathlib import Path
-from PetroCast.models.laherrere_model import laherrere_bell_curve
-from PetroCast.models.hubbert_curve_model import hubbert_curve
-from PetroCast.visualization import plot_results
+from petrocast.models.laherrere_model import laherrere_bell_curve
+from petrocast.models.hubbert_curve_model import hubbert_curve
+from petrocast.visualization import plot_results
 
 
 class TestPlotResults(unittest.TestCase):

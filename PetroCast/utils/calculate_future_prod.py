@@ -4,8 +4,8 @@ using Laherrère and Hubbert curve models.
 """
 
 import numpy as np
-from PetroCast.models.laherrere_model import laherrere_bell_curve
-from PetroCast.models.hubbert_curve_model import hubbert_curve
+from petrocast.models.laherrere_model import laherrere_bell_curve
+from petrocast.models.hubbert_curve_model import hubbert_curve
 
 
 def calculate_future_production(

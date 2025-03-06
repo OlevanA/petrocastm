@@ -9,7 +9,7 @@ import os
 import unittest
 import pandas as pd
 import numpy as np
-from PetroCast.utils.data_processing import load_data
+from petrocast.utils.data_processing import load_data
 
 
 class TestDataProcessing(unittest.TestCase):

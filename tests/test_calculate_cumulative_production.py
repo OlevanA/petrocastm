@@ -7,7 +7,7 @@ function using a dummy model for predictions.
 
 import unittest
 import numpy as np
-from PetroCast.utils.cumulative_production import calculate_cumulative_production
+from petrocast.utils.cumulative_production import calculate_cumulative_production
 
 
 def dummy_model_func(future_years, param1, param2, param3):

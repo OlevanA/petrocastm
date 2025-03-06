@@ -10,13 +10,13 @@ import numpy as np
 import pandas as pd
 import tomli
 
-from PetroCast.utils.data_processing import load_data
-from PetroCast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
-from PetroCast.utils.cumulative_production import calculate_cumulative_production
-from PetroCast.utils.calculate_future_prod import calculate_future_production
-from PetroCast.models.hubbert_curve_model import hubbert_curve
-from PetroCast.models.laherrere_model import laherrere_bell_curve
-from PetroCast.visualization import plot_results
+from petrocast.utils.data_processing import load_data
+from petrocast.utils.curve_fitting import fit_hubbert_curve, fit_laherrere_model
+from petrocast.utils.cumulative_production import calculate_cumulative_production
+from petrocast.utils.calculate_future_prod import calculate_future_production
+from petrocast.models.hubbert_curve_model import hubbert_curve
+from petrocast.models.laherrere_model import laherrere_bell_curve
+from petrocast.visualization import plot_results
 
 
 def run_petrocast(config_path, urr_key):
