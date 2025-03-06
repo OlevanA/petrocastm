@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def plot_results(data, laherre_full, hubbert_full, output_pth):
+def plot_results(data: dict, laherre_full: np.ndarray, hubbert_full: np.ndarray, output_pth: Path | str):
     """
     Plots historical production data along with Laherrère and Hubbert model fits.
 

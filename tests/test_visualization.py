@@ -11,26 +11,21 @@ class TestPlotResults(unittest.TestCase):
         self.data = {
             'years': np.array([2000, 2001, 2002]),
             'production': np.array([100, 110, 120]),
-            'future_years': np.array([2003, 2004, 2005])
+            'future_years': np.array([2003, 2004, 2005]),
+            'tm': 2050,
+            'peak_time': 2030
         }
-        self.laherrere_params = {
-            'peak_production': 150,
-            'tm': 2003,
-            'c': 0.5
-        }
-        self.hubbert_params = {
-            'urr': 1000,
-            'steepness': 0.15,
-            'peak_time': 2003
-        }
+        self.laherrere_full= np.array([2000, 2001, 2002, 2003, 2004, 2005])
+        self.hubbert_full = np.array([2000, 2001, 2002, 2003, 2004, 2005])
+        
         self.urr = 1000
         self.output_path = Path("test_output")
         if not self.output_path.exists():
             self.output_path.mkdir()
 
     def test_plot_creation(self):
-        plot_results(self.data, self.laherrere_params, self.hubbert_params,
-                     self.urr, self.output_path)
+        plot_results(data = self.data, laherre_full=self.laherrere_full, hubbert_full=self.hubbert_full,
+                     output_pth=self.output_path)
 
         # Check if file was created
         self.assertTrue((self.output_path / "results.png").exists())
