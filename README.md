@@ -42,8 +42,8 @@ pip install -e .
 ```
 To verify installation:
 ```sh
-pip list | grep PetroCast  # macOS/Linux
-pip list | findstr PetroCast  # Windows
+pip list | grep petrocast  # macOS/Linux
+pip list | findstr petrocast  # Windows
 ```
 ---------------------------------------------------------------------------------------------------------------------
 ## **Usage**
@@ -60,7 +60,7 @@ unit = "EJ"
 ---------------------------------------------------------------------------------------------------------------------
 Example Execute the program using:
 ```sh
-PetroCast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
+petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
 ```
 Or manually via Python:
 ```sh
