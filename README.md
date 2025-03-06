@@ -64,7 +64,7 @@ petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
 ```
 Or manually via Python:
 ```sh
-python -m PetroCast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
+python -m petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
 ```
 
 ---
