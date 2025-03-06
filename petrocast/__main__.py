@@ -14,11 +14,11 @@ def main():
         description="Run PetroCast model with a TOML configuration file."
     )
     parser.add_argument(
-        "--config", type=str, required=True,
+        "--config", type=str, required=False, default="config.toml",
         help="Path to the configuration TOML file."
     )
     parser.add_argument(
-        "--urr-key", type=str, required=True,
+        "--urr-key", type=str, required=False, default="Estimate1",
         help="Specify the URR estimate to use from the file."
     )
     args = parser.parse_args()
