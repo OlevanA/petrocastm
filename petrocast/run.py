@@ -95,11 +95,3 @@ def run_petrocast(config_path, urr_key):
         output_pth=output_pth,
     )
 
-
-if __name__ == "__main__":
-    import sys
-
-    if len(sys.argv) != 3:
-        print("Usage: python run.py <config_path> <urr_key>")
-    else:
-        run_petrocast(sys.argv[1], sys.argv[2])
