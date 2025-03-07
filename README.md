@@ -3,10 +3,11 @@
 PetroCast is a Python-based scientific modeling package designed to compare the accuracy 
 and forecasting power of different resource extraction models used by the scientific community, 
 with an initial focus on oil production. This tool helps researchers analyze historical trends, 
-predict future extraction rates, and evaluate model performance under shared assumptions, 
-such as a common Ultimate Recoverable Resource (URR) value.
+project future extraction rates, and evaluate model performance under shared assumptions, 
+such as a common Ultimate Recoverable Resource (URR) value. The model can be applied to other resources
+by the user when the instruction for the set up are followed. 
 
-In future versions, additional models and resource types (e.g., natural gas, coal, copper etc...) 
+In future versions, additional models and resource types as examples (e.g., natural gas, coal, copper etc...) 
 will be added, making PetroCast a versatile tool for resource modeling and forecasting.
 ---------------------------------------------------------------------------------------------------------------------
 ## **Overview**:
@@ -16,7 +17,7 @@ will be added, making PetroCast a versatile tool for resource modeling and forec
         Laherrère Model: Flexible asymmetric production curve, tailored for resource extraction modeling.
     Comparative Analysis: 
         Compare model accuracy for historical data.
-        Evaluate model predictions for future production under identical URR assumptions.
+        Evaluate model projections for future production under identical URR assumptions.
     Cumulative Production Analysis:
         Calculate cumulative production based on historical data and model forecasts.
         Convert production units (e.g., from Exajoules to Giga barrels).
@@ -30,11 +31,11 @@ will be added, making PetroCast a versatile tool for resource modeling and forec
 ### **Prerequisites**
 ---------------------------------------------------------------------------------------------------------------------
 - Python 3.8+
-- Required dependencies: `numpy`, `pandas`, `matplotlib`, `scipy`, `tomli`
+- Required dependencies: `numpy`, `pandas`, `matplotlib`, `scipy`, `tomli` , `pylint` , `pytest`
 ---------------------------------------------------------------------------------------------------------------------
 ### **Install PetroCast Locally**
 ---------------------------------------------------------------------------------------------------------------------
-Clone the repository git clone https://github.com/OlevanA/PetroCast.git
+Clone the repository git clone https://github.com/OlevanA/petrocastm.git
 
 Run the following command inside the project directory:
 ```sh
@@ -55,9 +56,17 @@ dataset = "data/raw/data1_oil_his_havard.csv"
 urr_file = "data/processed/Oil_estimate.csv"
 unit = "EJ"
 ```
+### ** Prepare the Configuration File**
+If you want to use your one data, take a look at structure of the CSV. files stuff
+
 ---------------------------------------------------------------------------------------------------------------------
 ### **2️⃣ Running the Application**
 ---------------------------------------------------------------------------------------------------------------------
+Example Execute the program using with default example:
+```sh
+petrocast
+```
+
 Example Execute the program using:
 ```sh
 petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
@@ -71,6 +80,10 @@ python -m petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...E
 ---------------------------------------------------------------------------------------------------------------------
 ## **Configuration Options**
 ---------------------------------------------------------------------------------------------------------------------
+The user has the option to configure petrocast to run with the example data which is for historical oil production
+in EJ or Gb and a data set for e Ultimate Recoverable Resources (URR) estimates 
+
+
 - `dataset`: Path to the historical production dataset.
 - `urr_file`: Path to the CSV file containing URR estimates.
 - `unit`: Choose between **EJ (Exajoules)** or **Gb (Gigabarrels)**.
@@ -92,6 +105,9 @@ Hubbert Model Parameters:
    - Ultimate Recoverable Resources (URR): 13,423.2 EJ
    - Steepness: 0.0436
    - Peak Year: 2030
+   
+   Example figure is saved under examples output showing the curves from both models, 
+   indicating the peak production year and the decline of production in the future.
 ```
 
 ---
