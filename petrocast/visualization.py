@@ -6,10 +6,11 @@ using Laherrère and Hubbert curve models.
 from pathlib import Path  # Standard library import first
 import matplotlib.pyplot as plt
 import numpy as np
+import uuid
 
 
 def plot_results(data: dict, laherre_full: np.ndarray, hubbert_full: np.ndarray,
-                 output_pth: Path | str):
+                 output_path: Path | str):
     """
     Plots historical production data along with Laherrère and Hubbert model fits.
 
@@ -17,10 +18,10 @@ def plot_results(data: dict, laherre_full: np.ndarray, hubbert_full: np.ndarray,
         data (dict): Dictionary containing 'years', 'production', and 'future_years'.
         laherre_full (np.ndarray): Laherrère model output.
         hubbert_full (np.ndarray): Hubbert model output.
-        output_pth (Path or str): Path where the plot will be saved.
+        output_path (Path or str): Path where the plot will be saved.
     """
-    output_pth = Path(output_pth)  # Ensure it's a Path object
-    output_pth.parent.mkdir(parents=True, exist_ok=True)  # Create directory if needed
+    output_path = Path(output_path)  # Ensure it's a Path object
+    output_path.parent.mkdir(parents=True, exist_ok=True)  # Create directory if needed
 
     years = data["years"]
     production = data["production"]
@@ -43,8 +44,9 @@ def plot_results(data: dict, laherre_full: np.ndarray, hubbert_full: np.ndarray,
     plt.grid()
 
     # Save the figure and close it to avoid file lock issues
-    fig.savefig(output_pth / "results.png")
+    output_filename = f"results_{data['urr_key']}_{str(uuid.uuid4())[-4:]}.png"
+    fig.savefig(output_path / output_filename)
     plt.close(fig)
     plt.close("all")  # Extra safety to close any lingering figures
 
-    print(f"Plot saved to: {output_pth}")
+    print(f"Plot saved to: {output_path}")

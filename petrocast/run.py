@@ -19,20 +19,20 @@ from petrocast.models.laherrere_model import laherrere_bell_curve
 from petrocast.visualization import plot_results
 
 
-def run_petrocast(config_path, urr_key):
+def run_petrocast(config_path, urr_key,root_path):
     """Executes the PetroCast pipeline with given configuration."""
-
+    print("Wait, processing request...")
     # Load TOML config
     with open(config_path, "rb") as file:
         config = tomli.load(file)
 
-    dataset_path = Path(config["dataset"])
-    urr_file = Path(config["urr_file"])
-    output_pth = Path(config["output_pth"])
+    dataset_file = Path.joinpath(root_path,config["dataset"])
+    urr_file = Path.joinpath(root_path,config["urr_file"])
+    output_path = Path.joinpath(root_path,config["output_path"])
     unit = config.get("unit", "EJ")
 
     # Load dataset
-    years, production_ej = load_data(dataset_path)
+    years, production_ej = load_data(dataset_file)
     production_gb = production_ej / 6.9
 
     # Load URR estimate
@@ -54,7 +54,7 @@ def run_petrocast(config_path, urr_key):
     hubbert_params = fit_hubbert_curve(years, production, urr)
 
     # Print results
-    print(f"\nUsing dataset: {dataset_path}")
+    print(f"\nUsing dataset: {dataset_file.stem}")
     print(f"URR: {urr:,.1f} {unit} (Key: {urr_key})\n")
     print(f"Laherrère Model Peak Year: {int(laherrere_params['tm'])}")
     print(f"Hubbert Model Peak Year: {int(hubbert_params['peak_time'])}\n")
@@ -78,6 +78,7 @@ def run_petrocast(config_path, urr_key):
         "future_years": future_years,
         "tm": int(laherrere_params["tm"]),
         "peak_time": int(hubbert_params["peak_time"]),
+        "urr_key": urr_key,
     }
 
     laherre_fit_full, hubbert_fit_full = calculate_future_production(
@@ -92,6 +93,6 @@ def run_petrocast(config_path, urr_key):
         data=data,
         laherre_full=laherre_fit_full,
         hubbert_full=hubbert_fit_full,
-        output_pth=output_pth,
+        output_path=output_path,
     )
 

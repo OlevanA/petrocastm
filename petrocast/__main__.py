@@ -11,13 +11,14 @@ from petrocast.run import run_petrocast
 
 def main():
     """Entry point for PetroCast CLI."""
-    example_folder = Path(__file__).parent.parent.absolute()
-    example_folder = Path.joinpath(example_folder, "examples", "config.toml")
+    root_folder = Path(__file__).parent.parent.absolute()
+    example_folder = Path.joinpath(root_folder, "examples")
+    config_file_name= Path.joinpath(example_folder, "config.toml")
     parser = argparse.ArgumentParser(
         description="Run PetroCast model with a TOML configuration file."
     )
     parser.add_argument(
-        "--config", type=str, required=False, default=example_folder,
+        "--config", type=str, required=False, default=config_file_name,
         help="Path to the configuration TOML file."
     )
     parser.add_argument(
@@ -26,7 +27,7 @@ def main():
     )
     args = parser.parse_args()
 
-    run_petrocast(args.config, args.urr_key)
+    run_petrocast(args.config, args.urr_key, root_folder)
 
 
 if __name__ == "__main__":
