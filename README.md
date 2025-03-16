@@ -134,7 +134,8 @@ Hubbert Model Parameters:
    Example figure is saved under examples output showing the curves from both models, 
    indicating the peak production year and the decline of production in the future.
 ```
-
+Example output :
+![Example figure](assets/figure_readme.png)
 ---
 ---------------------------------------------------------------------------------------------------------------------
 ## **Development**
