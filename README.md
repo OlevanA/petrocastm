@@ -86,6 +86,7 @@ in EJ or Gb and a data set for e Ultimate Recoverable Resources (URR) estimates
 
 - `dataset`: Path to the historical production dataset.
 - `urr_file`: Path to the CSV file containing URR estimates.
+- `output_path` Path to the visualisation of the model results 
 - `unit`: Choose between **EJ (Exajoules)** or **Gb (Gigabarrels)**.
 
 ---------------------------------------------------------------------------------------------------------------------
