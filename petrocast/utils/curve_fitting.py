@@ -42,20 +42,18 @@ def fit_hubbert_curve(years, production, ultimate_recoverable_resources):
     bounds = ([0.01, 2030], [0.05, 2040])  # Restrict peak time between 2030-2040
 
     # Perform curve fitting
-    try:
-        result = curve_fit(
-            hubbert_function, years, production, p0=initial_guess, bounds=bounds
-        )
 
-        # Unpack correctly, handling unexpected extra values
-        if len(result) >= 2:
-            params, _ = result[:2]  # Only take first two values
-            steepness, peak_time = params
-        else:
-            raise ValueError(f"Unexpected number of parameters returned: {len(result)}")
+    result = curve_fit(
+        hubbert_function, years, production, p0=initial_guess, bounds=bounds
+    )
 
-    except RuntimeError as err:
-        raise ValueError(f"Curve fitting failed: {err}") from err
+    # Unpack correctly, handling unexpected extra values
+    if len(result) >= 2:
+        params, _ = result[:2]  # Only take first two values
+        steepness, peak_time = params
+    else:
+        raise ValueError(f"Unexpected number of parameters returned: {len(result)}")
+
 
     return {"urr": ultimate_recoverable_resources, "steepness": steepness, "peak_time": peak_time}
 
@@ -93,19 +91,18 @@ def fit_laherrere_model(years, production, ultimate_recoverable_resources):
     bounds = ([0, 2030, 10], [np.inf, 2040, 300])  # Adjusted for peak time limits
 
     # Perform curve fitting
-    try:
-        result = curve_fit(
-            laherrere_function, years, production, p0=initial_guess, bounds=bounds
-        )
 
-        # Unpack correctly, handling unexpected extra values
-        if len(result) >= 2:
-            params, _ = result[:2]  # Only take first two values
-            peak_production, peak_time, c = params
-        else:
-            raise ValueError(f"Unexpected number of parameters returned: {len(result)}")
+    result = curve_fit(
+        laherrere_function, years, production, p0=initial_guess, bounds=bounds
+    )
 
-    except RuntimeError as err:
-        raise ValueError(f"Curve fitting failed: {err}") from err
+    # Unpack correctly, handling unexpected extra values
+    if len(result) >= 2:
+        params, _ = result[:2]  # Only take first two values
+        peak_production, peak_time, c = params
+    else:
+        raise ValueError(f"Unexpected number of parameters returned: {len(result)}")
+
+
 
     return {"peak_production": peak_production, "tm": peak_time, "c": c}

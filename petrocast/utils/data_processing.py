@@ -22,7 +22,7 @@ def load_data(filepath):
     Raises:
         ValueError: If an error occurs while reading or processing the file.
     """
-    try:
+
         data = pd.read_csv(filepath)
 
         # Convert "Year" to numeric, forcing non-numeric values to NaN
@@ -36,5 +36,4 @@ def load_data(filepath):
 
         return years, production
 
-    except Exception as e:
-        raise ValueError(f"Error processing file {filepath}: {e}") from e
+
