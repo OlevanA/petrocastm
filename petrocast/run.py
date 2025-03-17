@@ -95,4 +95,3 @@ def run_petrocast(config_path, urr_key,root_path):
         hubbert_full=hubbert_fit_full,
         output_path=output_path,
     )
-

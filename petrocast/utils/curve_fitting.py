@@ -103,6 +103,4 @@ def fit_laherrere_model(years, production, ultimate_recoverable_resources):
     else:
         raise ValueError(f"Unexpected number of parameters returned: {len(result)}")
 
-
-
     return {"peak_production": peak_production, "tm": peak_time, "c": c}

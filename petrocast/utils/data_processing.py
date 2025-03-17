@@ -23,17 +23,15 @@ def load_data(filepath):
         ValueError: If an error occurs while reading or processing the file.
     """
 
-        data = pd.read_csv(filepath)
+    data = pd.read_csv(filepath)
 
-        # Convert "Year" to numeric, forcing non-numeric values to NaN
-        data['Year'] = pd.to_numeric(data['Year'], errors='coerce')
+    # Convert "Year" to numeric, forcing non-numeric values to NaN
+    data['Year'] = pd.to_numeric(data['Year'], errors='coerce')
 
-        # Drop rows where 'Year' or 'Production' have NaN values
-        data.dropna(subset=['Year', 'Production'], inplace=True)
+    # Drop rows where 'Year' or 'Production' have NaN values
+    data.dropna(subset=['Year', 'Production'], inplace=True)
 
-        years = data["Year"].to_numpy(dtype=np.float64)
-        production = data["Production"].to_numpy(dtype=np.float64)
+    years = data["Year"].to_numpy(dtype=np.float64)
+    production = data["Production"].to_numpy(dtype=np.float64)
 
-        return years, production
-
-
+    return years, production

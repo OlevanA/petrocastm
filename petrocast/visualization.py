@@ -2,11 +2,11 @@
 This module provides visualization functionality for plotting production data and model fits
 using Laherrère and Hubbert curve models.
 """
-
+import uuid
 from pathlib import Path  # Standard library import first
 import matplotlib.pyplot as plt
 import numpy as np
-import uuid
+
 
 
 def plot_results(data: dict, laherre_full: np.ndarray, hubbert_full: np.ndarray,

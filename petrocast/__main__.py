@@ -14,11 +14,12 @@ def main():
     root_folder = Path(__file__).parent.parent.absolute()
     example_folder = Path.joinpath(root_folder, "examples")
     config_file_name= Path.joinpath(example_folder, "config.toml")
+
     # Epilog creation
     epilog_str = """Example usage (see README for more details):
     - petrocast example_1 : runs the example_1 with the historical data and estimate 1 (Laherrare et al. 2022).
     - petrocast example_2 : runs the example_2 with the historical data and estimate 2 (IEA Reserves + cumulative extraction). 
-    - petrocast --config config.toml --urr-key Estimate1 : runs using a custom configuration file and estimate 1 (Laherrare et al. 2022).
+    - petrocast --config config.toml --urr-key \"Estimate1\" : runs using a custom configuration file and estimate 1 (Laherrare et al. 2022).
     """
     # Parse command-line arguments
     parser = argparse.ArgumentParser(
@@ -34,7 +35,7 @@ def main():
         default=None,  # Default value if not provided
         help="The example to run (e.g., example_1)"
     )
-    
+
     parser.add_argument(
         "--config", type=str, required=False, default=config_file_name,
         help="Path to the configuration TOML file."

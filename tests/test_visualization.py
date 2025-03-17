@@ -23,6 +23,7 @@ class TestPlotResults(unittest.TestCase):
             "future_years": np.array([2003, 2004, 2005]),
             "tm": 2050,
             "peak_time": 2030,
+            "urr_key": "example_key"  #
         }
         self.laherrere_full = np.array([2000, 2001, 2002, 2003, 2004, 2005])
         self.hubbert_full = np.array([2000, 2001, 2002, 2003, 2004, 2005])
@@ -30,31 +31,39 @@ class TestPlotResults(unittest.TestCase):
         self.output_path = Path("test_output")
         self.output_path.mkdir(exist_ok=True)
 
+        #  Initialize `generated_file` to `None`
+        self.generated_file = None
+
     def test_plot_creation(self):
         """Test that the `plot_results` function successfully generates a plot file."""
         plot_results(
             data=self.data,
             laherre_full=self.laherrere_full,
             hubbert_full=self.hubbert_full,
-            output_pth=self.output_path,  #
+            output_path=self.output_path,
         )
 
-        # Check if the file was created
-        output_file = self.output_path / "results.png"
-        self.assertTrue(
-            output_file.exists(), "Plot file was not created."
-        )
+        # Dynamically find the generated file using glob pattern
+        matching_files = list(self.output_path.glob(f"results_{self.data['urr_key']}_*.png"))
+
+        # Ensure a file was created
+        self.assertTrue(matching_files, "No plot file was created.")
+
+        # Get the first matching file
+        output_file = matching_files[0]
 
         # Check if the file size is non-zero
         self.assertGreater(
             output_file.stat().st_size, 0, "Plot file is empty."
         )
 
+        # Store the filename for cleanup in tearDown
+        self.generated_file = output_file
+
     def tearDown(self):
         """Clean up generated test files after execution."""
-        output_file = self.output_path / "results.png"
-        if output_file.exists():
-            output_file.unlink()
+        if hasattr(self, "generated_file") and self.generated_file.exists():
+            self.generated_file.unlink()
 
         # Remove directory only if empty
         if not any(self.output_path.iterdir()):
