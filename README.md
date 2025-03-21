@@ -5,14 +5,14 @@ and forecasting power of different resource extraction models used by the scient
 with an initial focus on oil production. This tool helps researchers analyze historical trends, 
 project future extraction rates, and evaluate model performance under shared assumptions, 
 such as a common Ultimate Recoverable Resource (URR) value. The model can be applied to other resources
-by the user when the instruction for the setup are followed. 
+by following the instructions for the configuration file below. 
 
-In future versions, additional models and resource types as examples (e.g., natural gas, coal, copper etc...) 
+In future versions, additional models and resource types (e.g., natural gas, coal, copper etc.) 
 will be added, making PetroCast a versatile tool for resource modeling and forecasting.
 ---------------------------------------------------------------------------------------------------------------------
 ## **Overview**:
 ---------------------------------------------------------------------------------------------------------------------
-    Current Models Included 
+    Current Models Include: 
         Hubbert Model: Symmetric production curve for peak oil analysis.
         Laherrère Model: Flexible asymmetric production curve, tailored for resource extraction modeling.
     Comparative Analysis: 
@@ -22,9 +22,9 @@ will be added, making PetroCast a versatile tool for resource modeling and forec
         Calculate cumulative production based on historical data and model forecasts.
         Convert production units (e.g., from Exajoules to Giga barrels).
     Visualization:
-        Generate clear, annotated plots showing historical data, model fits, and future projections.
+        Generate annotated plots showing historical data, model fits, and future projections.
     Extensibility:
-        Easily integrate additional models or resources in future iterations.
+        Easily integrate additional models or resources in future versions.
 ---------------------------------------------------------------------------------------------------------------------
 ## **Installation**:
 ---------------------------------------------------------------------------------------------------------------------
@@ -49,13 +49,13 @@ pip list | findstr petrocast  # Windows
 ---------------------------------------------------------------------------------------------------------------------
 ## ** Simple Usage**
 ---------------------------------------------------------------------------------------------------------------------
-Example Execute the program using with default example:
+Execute the program using the default example:
 ```sh
 petrocast example_1 # or petrocast example_2....petrocast example_11
 ```
-Default example means that we use the same historical production dataset which is based on a data set 
-from the Havard university with Oil production data from 1900-2018 in Exajoules (EJ) and different 
-Ultimate Recoverable Resource (URR) values in EJ, in total eleven, found in the literature. See below:
+The default example means that we use the same historical production dataset which is based on a data set 
+from the Havard university, with oil production data from 1900-2018 in Exajoules (EJ), and different 
+Ultimate Recoverable Resource (URR) values in EJ. In total eleven eleven estimates are available in the literature. See below:
 
 | Estimations | Oil endowments in Literature                                    | Gb          | EJ          |
 |-------------|-----------------------------------------------------------------|-------------|-------------|
@@ -74,7 +74,7 @@ Ultimate Recoverable Resource (URR) values in EJ, in total eleven, found in the 
 ---------------------------------------------------------------------------------------------------------------------
 ## **Configuration Options**
 ---------------------------------------------------------------------------------------------------------------------
-The user has the option to configure petrocast to run with own example data which must contain historical production
+The user has the option to configure petrocast to run with her/his own example data which must contain historical production
 data from a resource in one Unit and an Ultimate Recoverable Resources (URR) Estimation or a CSV of different 
 URR Estimations in the same unit.  
 
@@ -84,7 +84,7 @@ URR Estimations in the same unit.
 - `unit`: Choose between **EJ (Exajoules)** or **Gb (Gigabarrels)**or **oth (Other)**.
 
 ---------------------------------------------------------------------------------------------------------------------
-### **Current structure of the Configuration File and how to Prepare the Configuration File (`config.toml`)**
+### **Current structure of the Configuration File and how to prepare this file (`config.toml`)**
 ---------------------------------------------------------------------------------------------------------------------
 Create a `config.toml` file with the following structure:
 ```toml
@@ -96,7 +96,7 @@ output_path = "examples/output/"# here the user can change the output path for t
 unit = "EJ"# Here the user can change the Unit that is used 
 ```
 ### ** Prepare the Configuration File and CSV Files**
-If you want to use your own data, take a look at structure of the CSV. files and make sure your files are
+If you want to use your own data, take a look at the structure of the CSV. files and make sure your files are
 structured in the same way!
 
 ---------------------------------------------------------------------------------------------------------------------
