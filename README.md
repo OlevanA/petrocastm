@@ -55,7 +55,8 @@ petrocast example_1 # or petrocast example_2....petrocast example_11
 ```
 The default example means that we use the same historical production dataset which is based on a data set 
 from the Havard university, with oil production data from 1900-2018 in Exajoules (EJ), and different 
-Ultimate Recoverable Resource (URR) values in EJ. In total eleven eleven estimates are available in the literature. See below:
+Ultimate Recoverable Resource (URR) values in EJ. In total eleven estimates are available from the literature. 
+See below:
 
 | Estimations | Oil endowments in Literature                                    | Gb          | EJ          |
 |-------------|-----------------------------------------------------------------|-------------|-------------|
