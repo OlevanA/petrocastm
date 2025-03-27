@@ -31,6 +31,7 @@ def main():
     # Add a positional argument (no -- prefix)
     parser.add_argument(
         "example_name",  # This will be the name of the attribute in the args object
+        nargs='?',
         type=str,
         default=None,  # Default value if not provided
         help="The example to run (e.g., example_1)"
