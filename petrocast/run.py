@@ -44,7 +44,7 @@ def run_petrocast(config_path, urr_key,root_path):
             f"URR key '{urr_key}' not found. Available keys: {df['estimate'].tolist()}"
         )
 
-    urr = df.loc[df["estimate"] == urr_key, "value"].values[0]
+    urr = float(df.loc[df["estimate"] == urr_key, "value"].values[0])
 
     # Convert data based on unit
     production = production_gb if unit == "Gb" else production_ej
@@ -79,6 +79,7 @@ def run_petrocast(config_path, urr_key,root_path):
         "tm": int(laherrere_params["tm"]),
         "peak_time": int(hubbert_params["peak_time"]),
         "urr_key": urr_key,
+        "unit": unit,
     }
 
     laherre_fit_full, hubbert_fit_full = calculate_future_production(

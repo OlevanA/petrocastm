@@ -38,7 +38,8 @@ def plot_results(data: dict, laherre_full: np.ndarray, hubbert_full: np.ndarray,
     plt.axvline(data["peak_time"], color="purple", linestyle="--", label="Hubbert Peak Year")
 
     plt.xlabel("Year")
-    plt.ylabel("Production (EJ/year or similar)")
+    unit = data.get("unit", "EJ")  # either untit or EJ as default
+    plt.ylabel(f"Production ({unit}/year)")  # Unit defined by TOML
     plt.title("Production and Model Fits (Full Curve)")
     plt.legend()
     plt.grid()
