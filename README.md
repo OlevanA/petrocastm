@@ -75,9 +75,9 @@ See below:
 ---------------------------------------------------------------------------------------------------------------------
 ## **Configuration Options**
 ---------------------------------------------------------------------------------------------------------------------
-The user has the option to configure petrocast to run with her/his own example data which must contain historical production
-data from a resource in one Unit and an Ultimate Recoverable Resources (URR) Estimation or a CSV of different 
-URR Estimations in the same unit.  
+The user has the option to configure petrocast to run with her/his own example data which must contain historical 
+production data from a resource in one Unit and an Ultimate Recoverable Resources (URR) Estimation or a CSV of 
+different URR Estimations in the same unit.  
 
 - `dataset`: Path to the historical production dataset.
 - `urr_file`: Path to the CSV file containing URR estimates.
@@ -100,17 +100,29 @@ unit = "EJ"# Here the user can change the Unit that is used
 If you want to use your own data, take a look at the structure of the CSV. files and make sure your files are
 structured in the same way!
 
+### ** Prepare the curve_fitting_script to set reasonable bound and expected peak times**
+The curve fitting script needs to be adapted to the resources, literature research required to fill in reasonable 
+estimate for the intial estimates.
+
+# Initial guess and bounds hubbert_curve
+initial_guess = [0.02, 2040]  # Needs to modified by the user according to literature suggestions!
+bounds = ([0.01, 2030], [0.05, 2040])  # Needs to modified by the user!
+
+# Initial guess and bounds laherrere model 
+initial_guess = [max(production), 2040, 100]  # Peak at Year with reasonable width
+bounds = ([0, 2030, 10], [np.inf, 2040, 300])  # Adjust for peak time limits
+
 ---------------------------------------------------------------------------------------------------------------------
 ### **2️⃣ Running the Application with own data**
 ---------------------------------------------------------------------------------------------------------------------
 
 Example Execute the program using:
 ```sh
-petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
+petrocast --config examples/config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
 ```
 Or manually via Python:
 ```sh
-python -m petrocast --config config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
+python -m petrocast --config examples/config.toml --urr-key "Estimate1" #Or Estimate2...Estimate11
 ```
 
 ---
@@ -145,10 +157,9 @@ Example output :
 ```sh
 pytest tests/
 ```
-### **Build & Install Package**
+### **Run pylint**
 ```sh
-pip install build
-python -m build
+pylint petrocast
 ```
 
 ---

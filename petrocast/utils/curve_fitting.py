@@ -37,7 +37,7 @@ def fit_hubbert_curve(years, production, ultimate_recoverable_resources):
     def hubbert_function(t, steepness, peak_time):
         return hubbert_curve(t, ultimate_recoverable_resources, steepness, peak_time)
 
-    # Initial guess and bounds
+    # Initial guess and bounds hubbert_curve
     initial_guess = [0.02, 2040]  # Conservative peak assumption
     bounds = ([0.01, 2030], [0.05, 2040])  # Restrict peak time between 2030-2040
 
@@ -86,8 +86,8 @@ def fit_laherrere_model(years, production, ultimate_recoverable_resources):
             t, peak_production, peak_time, width, ultimate_recoverable_resources
         )
 
-    # Initial guess and bounds
-    initial_guess = [max(production), 2040, 200]  # Peak at 2040 with reasonable width
+    # Initial guess and bounds laherrere model
+    initial_guess = [max(production), 2040, 100]  # Peak at 2040 with reasonable width
     bounds = ([0, 2030, 10], [np.inf, 2040, 300])  # Adjusted for peak time limits
 
     # Perform curve fitting
