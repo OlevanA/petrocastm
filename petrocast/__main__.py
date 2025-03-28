@@ -19,7 +19,7 @@ def main():
     epilog_str = """Example usage (see README for more details):
     - petrocast example_1 : runs the example_1 with the historical data and estimate 1 (Laherrare et al. 2022).
     - petrocast example_2 : runs the example_2 with the historical data and estimate 2 (IEA Reserves + cumulative extraction). 
-    - petrocast --config config.toml --urr-key \"Estimate1\" : runs using a custom configuration file and estimate 1 (Laherrare et al. 2022).
+    - python -m petrocast --config examples/config.toml --urr-key \"Estimate1\" : runs using a custom configuration file and estimate 1 (Laherrare et al. 2022).
     """
     # Parse command-line arguments
     parser = argparse.ArgumentParser(
