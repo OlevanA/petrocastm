@@ -18,6 +18,7 @@ from petrocast.models.hubbert_curve_model import hubbert_curve
 from petrocast.models.laherrere_model import laherrere_bell_curve
 from petrocast.visualization import plot_results
 
+print("Might take some time...")
 
 def run_petrocast(config_path, urr_key,root_path):
     """Executes the PetroCast pipeline with given configuration."""
